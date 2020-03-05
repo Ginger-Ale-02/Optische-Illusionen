@@ -18,9 +18,18 @@ public class Hermmann_Gitter_2 extends PApplet
     @Override
     public void settings()
     {
-        size(500,500);
+        size(490,490);
     }        
+    int s = 40;
+    int a = 10;
 
+    public void quadrate(){
+        for (int k = 0; k < 10; k++){
+            for (int i = 0; i < 10; i++){
+                square(i*s + i*a, k*s + k*a, s);
+            }
+        }
+    }
     /**
      * Die setup() Methode wird einmal aufgerufen, wenn das Programm startet.
      * Hier werden Einstellungen wie die Hintergrundfarbe vorgenommen
@@ -28,19 +37,9 @@ public class Hermmann_Gitter_2 extends PApplet
      */
     @Override
     public void setup()
-    {
-
-    }
-
-    /**
-     * Die draw() Methode wird nach der setup() Methode aufgerufen
-     * und führt den Code innerhalb ihres Blocks fortlaufend aus,
-     * bis das Programm gestoppt oder noLoop() aufgerufen wird.
-     */
-    @Override
-    public void draw()
-    {
-
+    {   
+        background(100);
+        quadrate();
     }
 
     /**
