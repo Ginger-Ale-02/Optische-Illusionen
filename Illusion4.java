@@ -3,13 +3,13 @@ import processing.core.PApplet;
 import processing.core.PFont;
 
 /**
- * Klasse OptischeIllusionObjectoriented.
+ * Klasse Illusion 4.
  * Beschreibung: 
  *
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class OptischeIllusionObjectoriented extends PApplet
+public class Illusion4 extends PApplet
 {   
     int s=60; //Seitenlänge der Quadrate
 
@@ -87,7 +87,7 @@ public class OptischeIllusionObjectoriented extends PApplet
      *
      */    
     public static void main(String _args[]){ 
-        PApplet.main(new String[] {OptischeIllusionObjectoriented.class.getName() });
+        PApplet.main(new String[] {Illusion4.class.getName() });
     }
 
 }
