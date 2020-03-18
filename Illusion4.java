@@ -16,7 +16,7 @@ public class Illusion4 extends PApplet
     @Override
     public void settings()
     {
-        size(500,280);
+        size(500,260);
     }        
 
     public void zeichneQuadrat(int x, int y, int hintergrundFarbe, boolean rechts){
@@ -54,16 +54,16 @@ public class Illusion4 extends PApplet
 
             for(int i = 0; i < 8; i++){
                 farbe = 255-farbe;
-                zeichneQuadrat(i * s,k * s, farbe, rechts);
+                zeichneQuadrat(i * s +10,k * s +10, farbe, rechts);
             }
             farbe =255-farbe;
         }
     }
 
     public void linien(){
-        line(0, 60, 500, 60);
-        line(0, 120, 500, 120);
-        line(0, 180, 500, 180);
+        line(0, 70, 500, 70);
+        line(0, 130, 500, 130);
+        line(0, 190, 500, 190);
     }
 
     /**
@@ -75,7 +75,7 @@ public class Illusion4 extends PApplet
     public void setup()
     {
         background(255,165,0);
-        zeichneQuadrat(0, 0, 0, true);
+        zeichneQuadrat(10, 10, 0, true);
         quadrate();
         colorMode(RGB);
         stroke(0, 255, 0);
